@@ -80,12 +80,12 @@ const SummarizePage = () => {
   };
 
   return (
-    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center px-4 md:px-12 h-[90vh]">
-      <div className="bg-white w-full h-[70vh] shadow-md rounded-2xl flex p-2">
+    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center px-4 md:px-12 min-h-screen">
+      <div className="bg-white w-full h-[50vh] shadow-md rounded-2xl flex p-2 overflow-auto">
         <textarea
           onChange={(e) => setUserText(e.target.value)}
           className="w-full rounded-l-2xl p-5 resize-none md:border-r focus:outline-none"
-          placeholder='Enter or paste your text and press "Generate Summary"'
+          placeholder='Enter or paste your text and click "Generate Summary"'
         />
 
         <textarea

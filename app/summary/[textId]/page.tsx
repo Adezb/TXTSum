@@ -39,12 +39,12 @@ const SummaryPage = () => {
   }, [textId]);
 
   return (
-    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center px-4 md:px-12 h-[90vh]">
+    <div className="bg-[#f5f5f5] flex flex-col justify-center items-center px-4 md:px-12 min-h-screen">
       <div className="hidden md:flex pt-5 pb-2 justify-between items-center w-full text-lg font-semibold">
         <p>Your Text</p>
         <p>Summary</p>
       </div>
-      <div className="bg-white w-full h-[70vh] shadow-md rounded-2xl hidden md:flex p-2">
+      <div className="bg-white w-full h-[50vh] shadow-md rounded-2xl hidden md:flex p-2 overflow-auto">
         <textarea
           className="w-full rounded-l-2xl p-5 resize-none md:border-r focus:outline-none"
           disabled

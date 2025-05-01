@@ -8,8 +8,6 @@ import { toast } from "sonner";
 import { useGetUserInfo } from "@/hooks/useGetUserInfo";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-// const defaultPic = "/assets/user-icon.png";
-
 const Navbar = () => {
   const { isAuth } = useGetUserInfo();
 
