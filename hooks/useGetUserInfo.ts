@@ -7,6 +7,7 @@ export const useGetUserInfo = () => {
     name: "",
     userId: "",
     userEmail: "",
+    photoURL: "",
     isAuth: false,
   });
 
