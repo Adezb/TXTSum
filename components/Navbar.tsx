@@ -6,10 +6,9 @@ import { signInWithPopup, signOut } from "firebase/auth";
 import { auth, provider } from "@/config/firebaseConfig";
 import { toast } from "sonner";
 import { useGetUserInfo } from "@/hooks/useGetUserInfo";
-import { useEffect, useState } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
 
-const defaultPic = "/assets/user-icon.png";
+// const defaultPic = "/assets/user-icon.png";
 
 const Navbar = () => {
   const { isAuth } = useGetUserInfo();
@@ -80,7 +79,7 @@ const Navbar = () => {
           <div className="relative group flex items-center">
             {user?.photoURL && (
               <img
-                src={user?.photoURL || defaultPic}
+                src={user?.photoURL || "/assets/user-icon.png"}
                 alt="profile"
                 className="hidden group-hover:block absolute -left-4 top-1/2 transform -translate-y-1/2 w-6 h-6 rounded-full border border-gray-400 transition-opacity duration-200 ease-in-out"
               />
